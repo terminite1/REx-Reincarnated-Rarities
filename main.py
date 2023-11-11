@@ -29,10 +29,8 @@ def clear():
     os.system('cls') # This defines the border between win and unix!!! for some reason
 
 def get_tier_multiplier(tier):
-    if 1 <= tier <= 6:
+    if 1 <= tier <= 7:
         return TIER_MULTIPLIERS[tier]
-    elif tier == 7:
-        return TIER_MULTIPLIERS[7]  # use Zenith multiplier for invalid tiers
     else:
         return (0, 0)  # use default multipliers for invalid tiers
 
